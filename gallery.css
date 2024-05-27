@@ -1,0 +1,55 @@
+@import url('main.css');
+
+.banner-text{
+    text-align: center;
+	top: 25%;
+	color: white;
+	padding: 20px;
+}
+
+.banner-text h4{
+	color: aquamarine   ;
+	font-size: 45px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.banner-text p {
+	font-size: 26px;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.gallery {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}

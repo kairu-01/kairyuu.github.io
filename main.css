@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	background-image: linear-gradient(hsla(0, 0%, 0%, 80%), hsla(0, 0%, 0%, 80%)), url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	color: white; 
+	font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+	letter-spacing: 2px;
+	margin: 0px;
+	padding: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+} 
+
+main {
+    flex-grow: 1;
+	justify-content: flex-end;
+	animation-name: fade-in;
+	animation-duration: 3s;
+}
+
+.logo {
+	height: inherit;
+	position: absolute;
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	width: 8rem;
+	height: 8rem;
+	padding: 25px;
+}
+
+.navbar {
+	width: 100%;
+	height: 85px;
+}
+
+.navbar ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;	
+	width: inherit;
+	height: inherit;
+	margin: 0px;
+	list-style-type: none;
+}
+
+.navbar li {
+	width: max-content;
+}
+
+.navbar a {
+	padding: 20px;
+	color: white;
+	font-size: 15px;
+	letter-spacing: 4px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.navbar a:hover {
+	background-color: hsla(0, 0%, 0%, 0.25);
+	color: rgb(21, 207, 14);;
+}
+
+.navbar a:active {
+    background-color: hsla(0, 0%, 0%, 40%);
+    color: rgb(21, 207, 14);;
+}
+
+.navbar a.selected {
+    background-color: hsla(0, 0%, 0%, 40%);
+    color: rgb(21, 207, 14);
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0%;
+	}
+
+	to {
+		opacity: 1
+	}
+}
